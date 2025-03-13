@@ -14,11 +14,22 @@ public class PasswordGenerator {
 
         Scanner scan = new Scanner(System.in);
 
+        System.out.println("Insert name: " );
         firstName = scan.next();
+
+        System.out.println("Insert last name: " );
         lastName = scan.next();
+
+        System.out.println("Insert favourite color: " );
         fevColor = scan.next();
+
+        System.out.println("Insert day of birth: " );
         dayOfBirth = scan.nextInt();
+
+        System.out.println("Insert mounth of birth: " );
         mounthOfBirth = scan.nextInt();
+
+        System.out.println("Insert year of birth: " );
         yearOfBirth = scan.nextInt();
 
         String generatedPassword = firstName + "-" + lastName + "-" + fevColor + "-" + (dayOfBirth + mounthOfBirth + yearOfBirth);
